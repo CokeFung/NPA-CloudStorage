@@ -18,3 +18,42 @@ REACT_APP_AWS_SECRET_ACCESS_KEY=xxx
 REACT_APP_S3_REGION=us-east-1
 REACT_APP_S3_BUCKET=npa-storage-1
 ```
+
+
+# S3's permission (Do not use this policy for REAL production)
+### Bucket policy (allow anonymous user to read)
+```
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"PublicRead",
+      "Effect":"Allow",
+      "Principal": "*",
+      "Action":["s3:GetObject","s3:GetObjectVersion"],
+      "Resource":["arn:aws:s3:::<bucket name>/*"]
+    }
+  ]
+}
+```
+
+### Cross-origin resource sharing (CORS)
+```
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "PUT",
+            "POST",
+            "DELETE",
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
