@@ -11,7 +11,7 @@ cd NPA-CloudStorage
 npm install -f
 ```
 
-### Create `.env` file in Project's root directory (like `{path}/NPA-CloudStorage/.env`)
+### Create `.env` file in project's root directory (like `{path}/NPA-CloudStorage/.env`)
 ```
 REACT_APP_AWS_ACCESS_KEY_ID=xxx
 REACT_APP_AWS_SECRET_ACCESS_KEY=xxx
