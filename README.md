@@ -1,2 +1,2 @@
-# npa-storage
+# NPA-CloudStorage
 Cloud storage (node.js + AWS S3)
