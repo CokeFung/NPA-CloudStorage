@@ -3,10 +3,10 @@ import { S3Client, ListObjectsCommand, DeleteObjectCommand, PutObjectCommand } f
 import  { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import axios from 'axios';
 
-const S3_BUCKET = process.env.S3_BUCKET;
-const REGION = process.env.S3_REGION;
-const ACCESS_KEY = process.env.AWS_ACCESS_KEY_ID;
-const SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY;
+const S3_BUCKET = process.env.REACT_APP_S3_BUCKET;
+const REGION = process.env.REACT_APP_S3_REGION;
+const ACCESS_KEY = process.env.REACT_APP_AWS_ACCESS_KEY_ID;
+const SECRET_ACCESS_KEY = process.env.REACT_APP_AWS_SECRET_ACCESS_KEY;
 
 const s3 = new S3Client({ 
     region: REGION,
