@@ -21,7 +21,7 @@ REACT_APP_S3_BUCKET=npa-storage-1
 
 
 
-### S3's permission configuration (Do not use this policyies in REAL-LIFE production)
+### S3's permission configurations (Do not use this policyies in REAL-LIFE production)
 ##### Bucket policy (allow anonymous user to read)
 ```
 {
