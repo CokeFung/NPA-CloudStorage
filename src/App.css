@@ -39,17 +39,31 @@
 }
 
 .Container-default {
-  padding-top: 20px;
+  padding-top: 30px;
   margin-bottom: 30px;
   width: 840px;
   text-align: left;
-  /* background-color: cadetblue; */
 }
 
 .Container-upload {
   padding: 30px;
   margin-bottom: 30px;
-  min-width: 840px;
+  width: 840px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Container-default {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    width: 416px;
+    text-align: left;
+  }
+  .Container-upload {
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 416px !important;
+  }
+  
 }
 
 .Container-title {
