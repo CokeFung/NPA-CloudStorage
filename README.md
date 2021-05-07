@@ -1,7 +1,7 @@
 # NPA - Cloud Storage
 Cloud storage (node.js + AWS S3)
 
-### Setup commands for linux
+### Setup commands for AWS EC2
 ```
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 sudo yum install -y nodejs
