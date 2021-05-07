@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className='App-logo' alt='app-logo' />
-        <p>
+        <p className='Container-logo'>
           NPA - Cloud Storage
         </p>
         <DraggerContainer />
