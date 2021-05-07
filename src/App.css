@@ -3,8 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+  margin-top: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: top; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +36,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Container-default {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  width: 840px;
+  text-align: left;
+  /* background-color: cadetblue; */
+}
+
+.Container-upload {
+  padding: 30px;
+  margin-bottom: 30px;
+  min-width: 840px;
+}
+
+.Container-title {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: -24px;
+}
+
+.Container-delObjbutton:hover {
+  color: red !important;
+}
+
+.Container-delObjbutton {
+  color: whitesmoke !important;
 }
