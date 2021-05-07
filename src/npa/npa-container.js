@@ -69,7 +69,7 @@ export class StorageContainer extends Component {
         return {
           name: d.Key,
           status: 'done',
-          url: 'https://' + process.env.S3_BUCKET +'.s3.amazonaws.com/' + d.Key,
+          url: 'https://' + process.env.REACT_APP_S3_BUCKET +'.s3.amazonaws.com/' + d.Key,
         };
       })
       this.setState({data: fileList})
