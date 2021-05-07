@@ -1,7 +1,7 @@
 # NPA - Cloud Storage
 Cloud storage (node.js + AWS S3)
 
-### Setup commands for AWS EC2
+##### Setup commands for AWS EC2
 ```
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 sudo yum install -y nodejs
@@ -11,7 +11,7 @@ cd NPA-CloudStorage
 npm install -f
 ```
 
-### Create `.env` file in project's root directory (like `{path}/NPA-CloudStorage/.env`)
+##### Create `.env` file in project's root directory (like `{path}/NPA-CloudStorage/.env`)
 ```
 REACT_APP_AWS_ACCESS_KEY_ID=xxx
 REACT_APP_AWS_SECRET_ACCESS_KEY=xxx
@@ -20,8 +20,8 @@ REACT_APP_S3_BUCKET=npa-storage-1
 ```
 
 
-# S3's permission (Do not use this policyies in REAL-LIFE production)
-### Bucket policy (allow anonymous user to read)
+### S3's permission (Do not use this policyies in REAL-LIFE production)
+##### Bucket policy (allow anonymous user to read)
 ```
 {
   "Version":"2012-10-17",
@@ -37,7 +37,7 @@ REACT_APP_S3_BUCKET=npa-storage-1
 }
 ```
 
-### Cross-origin resource sharing (CORS)
+##### Cross-origin resource sharing (CORS)
 ```
 [
     {
