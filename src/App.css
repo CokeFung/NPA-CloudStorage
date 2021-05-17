@@ -25,6 +25,11 @@
   color: white;
 }
 
+.server-name {
+  font-size: calc(3px + 1vmin);
+  color: #9FA7AD;
+}
+
 .App-link {
   color: #61dafb;
 }

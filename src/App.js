@@ -3,6 +3,8 @@ import './App.css';
 
 import { DraggerContainer, StorageContainer } from  './npa/npa-container';
 
+const SERVER_NAME = process.env.REACT_APP_SERVER_NAME
+
 function App() {
   return (
     <div className="App">
@@ -11,6 +13,7 @@ function App() {
         <p className='Container-logo'>
           NPA - Cloud Storage
         </p>
+        <p className='server-name'>{SERVER_NAME}</p>
         <DraggerContainer />
         <div className="Container-default">
             <div className="Container-title">
